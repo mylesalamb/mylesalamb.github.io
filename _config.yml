@@ -16,7 +16,7 @@
 title: Myles' Website 
 email: mylesalamb@gmail.com
 description: >- # this means to ignore newlines until "baseurl:" 
-        Some website about the projects that i post to github, now powered by <a href="http://www.jekyllrb.com">jekyll</a> 
+        Some website about the projects that i post to github, now powered by jekyll using the minima theme 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mylesalamb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mylesalamb
