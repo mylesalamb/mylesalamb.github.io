@@ -1,7 +1,37 @@
 {% extends 'base.html' %}
 
 
-{% block body %}
+{% block title %}
+Homepage
+{% endblock %}
 
-    some stuff
+{% block body %}
+<div class="row">
+
+    <div class="row s6">
+
+    </div>
+
+    <div class="row s6">
+
+        {% for article in articles[:5] %}
+        <div class="card grey">
+
+            <div class="card-content white-text">
+                <span class="card-title">{{ article.title }}</span>
+                {{ article.date|strftime('%d %B %Y') }}
+                <p>{{ article.summary }}</p>
+            </div>
+
+            <div class="card-action">
+                <a href="#">Full Article</a>
+            </div>
+        </div>
+        {% endfor %}
+
+
+    </div>
+
+
+</div>
 {% endblock %}
