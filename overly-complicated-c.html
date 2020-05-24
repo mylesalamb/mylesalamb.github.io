@@ -14,7 +14,7 @@
 
 <link rel="stylesheet" href="/theme/css/pygments.css"/>
 
-    <title> My super title
+    <title> Overly Complicated Hello World
  </title>
 
     <meta name="title" content="Myles' Wesbite">
@@ -51,7 +51,50 @@
     <!-- container for content stuff-->
     <div class="container">
 
-<p>Somethin sometin something</p>
+<p>I was bored so I wrote an overly complicated C program</p>
+<div class="highlight"><pre><span></span>#define BACKSPACE &#39;\r&#39;  //ascii code for backspace
+#define UPPER 126       //upper boundary for the chars we want to print
+#define LOWER 32        //likewise lower
+#define DELAY 10000     // 100ms sleep time
+
+int main(void){
+
+    //string we want to print to stdout
+    const char * const target = &quot;Hello World&quot;;
+    const size_t len = strlen(target);
+    char outstr[len+1];
+    srand(time(NULL));
+
+    for(int i = 0; i &lt; len; i++){
+
+        int cursor = (rand() % (UPPER - LOWER)) + LOWER;
+
+        outstr[i+1] = &#39;\0&#39;;
+        //continuously try to print the right character to stdout
+        //for nice effect
+        while(1){
+
+    //make sure the line is clear
+            putc(BACKSPACE,stdout);
+            fflush(stdout);
+
+            outstr[i] = cursor;
+            printf(&quot;%s&quot;,outstr);
+
+            if(cursor == target[i])
+                break;
+
+            if(++cursor &gt; UPPER)
+                cursor = LOWER;
+
+            usleep(DELAY);
+        }
+
+    }
+    putc(&#39;\n&#39;,stdout);
+}
+</pre></div>
+<p>and some other stuff after the code</p>
 
 
     </div>
