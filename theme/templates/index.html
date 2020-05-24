@@ -8,13 +8,21 @@ Homepage
 {% block body %}
 <div class="row">
 
-    <div class="row s6">
-
+    <div class="col s12 m7">
+        <h4>About me</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nulla posuere porttitor purus id condimentum. 
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Etiam tristique nibh dui, id mattis turpis maximus id. Nunc ac semper orci,
+            aliquet scelerisque augue. Duis blandit commodo turpis, at ultrices turpis placerat sed.
+            Nullam nulla risus, malesuada vitae diam at, posuere cursus sem. Quisque lobortis lacinia urna, a feugiat est. Duis consequat dictum mattis. Nam eu tellus ac nibh facilisis mattis. Sed gravida luctus convallis. Quisque tellus quam, imperdiet vel urna sit amet, efficitur consequat mi. Vestibulum vitae nunc eros. </p>
+        
     </div>
+    <div class="divider"></div>
 
-    <div class="row s6">
-
-        {% for article in articles[:5] %}
+    <div class="col s12 m4">
+        <h4>Recent stuff I'm up to</h4>
+        {% for article in articles[:3] %}
         <div class="card grey">
 
             <div class="card-content white-text">
@@ -24,7 +32,7 @@ Homepage
             </div>
 
             <div class="card-action">
-                <a href="#">Full Article</a>
+                <a href="{{article.url}}">Full Article</a>
             </div>
         </div>
         {% endfor %}
