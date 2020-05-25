@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 
 
+{% block head %}
+{{ super() }}
+<script src="theme/js/index.js"></script>
+
+{% endblock %}
+
 {% block title %}
 Homepage
 {% endblock %}
