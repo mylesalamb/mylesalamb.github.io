@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
-    $(".dropdown-trigger").dropdown({ hover:false });
+    $('.sidenav').sidenav();
+    $(".dropdown-trigger").each(function(){
+        console.log("fired")
+        $(this).dropdown({ hover:false })   
+    });
 
 })

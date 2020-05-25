@@ -9,12 +9,15 @@
     {# materialize stuff here #}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="theme/css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="theme/css/main.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
     {% endblock %}
 
     <title> {% block title %}{% endblock %} </title>
@@ -30,34 +33,51 @@
 </head>
 
 <body>
+
+    <!-- Dropdown options -> trigger in nav -->
+    <ul id="dropdown_desk" class="dropdown-content">
+        <li><a href="categories.html" class="black-text">By category</a></li>
+        <li><a href="archives.html" class="black-text">By publish date</a></li>
+    </ul>
+    <ul id="dropdown_mob" class="dropdown-content">
+        <li><a href="categories.html" class="black-text">By category</a></li>
+        <li><a href="archives.html" class="black-text">By publish date</a></li>
+    </ul>
+
     <nav class="white z-depth-3">
         <div class="nav-wrapper container">
             <a href="/" class="brand-logo black-text">{{SITENAME}}</a>
-            <ul class="right">
-                <li> <a href="#" class="black-text">Blog</a></li>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i
+                    class="material-icons black-text">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li> <a class="dropdown-trigger black-text" href="#!" data-target="dropdown_desk"
+                        data-beloworigin="true">Blog<i class="material-icons right black-text">arrow_drop_down</i></a>
+                </li>
                 <li> <a href="#" class="black-text">About</a></li>
                 <li> <a href="pdf/resume.pdf" class="black-text" download>CV</a></li>
                 <li> <a href="#" class="black-text">Contact</a></li>
             </ul>
 
-            <!-- <ul id="nav-mobile" class="sidenav">
-                <li> <a href="#" class="black-text">Blog</a></li>
+            <ul id="nav-mobile" class="sidenav">
+                <li> <a class="dropdown-trigger black-text" href="#!" data-target="dropdown_mob"
+                        data-beloworigin="true">Blog<i class="material-icons right black-text">arrow_drop_down</i></a>
+                </li>
                 <li> <a href="#" class="black-text">About</a></li>
                 <li> <a href="pdf/resume.pdf" class="black-text" download>CV</a></li>
                 <li> <a href="#" class="black-text">Contact</a></li>
-            </ul> -->
+            </ul>
 
         </div>
     </nav>
 
     <!-- container for content stuff-->
     <main>
-    <div class="container content">
-        {% block body %}
+        <div class="container content">
+            {% block body %}
 
-        {% endblock %}
-    </div>
-</main>
+            {% endblock %}
+        </div>
+    </main>
 
     <!-- footer -->
     <footer class="page-footer black">
@@ -67,7 +87,8 @@
                     <h5 class white-text>
                         Other stuff
                     </h5>
-                    This site uses the <a href="https://pypi.org/project/pelican/">Pelican</a> static site generator, and the <a href="https://materializecss.com/">Matierialize</a> CSS Framework
+                    This site uses the <a href="https://pypi.org/project/pelican/">Pelican</a> static site generator,
+                    and the <a href="https://materializecss.com/">Materialize</a> CSS Framework
                 </div>
 
                 <div class="col l4">
@@ -85,7 +106,7 @@
                             <i class="fab fa-twitter" aria-hidden="true"></i>
                             <a href="https://twitter.com/MylesaLamb" class="white-text">Twitter</a>
                         </li>
-                        
+
                         <li>
                             <i class="fab fa-instagram" aria-hidden="true"></i>
                             <a href="https://instagram.com/mylesaLamb" class="white-text">Instagram</a>
@@ -97,9 +118,9 @@
 
         <div class="footer-copyright">
             <div class="container">
-            Copyright © 2020, Myles Lamb
+                Copyright © 2020, Myles Lamb
             </div>
-          </div>
+        </div>
 
     </footer>
 
