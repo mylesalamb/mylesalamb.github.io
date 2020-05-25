@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" href="theme/css/main.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="theme/css/pygments.css"/>
+<link rel="stylesheet" href="theme/css/pygments.css" />
 
     <title> Overly Complicated Hello World
  </title>
@@ -34,14 +36,14 @@
             <ul class="right hide-on-med-and-down">
                 <li> <a href="#" class="black-text">Blog</a></li>
                 <li> <a href="#" class="black-text">About</a></li>
-                <li> <a href="#" class="black-text">CV</a></li>
+                <li> <a href="pdf/resume.pdf" class="black-text" download>CV</a></li>
                 <li> <a href="#" class="black-text">Contact</a></li>
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
                 <li> <a href="#" class="black-text">Blog</a></li>
                 <li> <a href="#" class="black-text">About</a></li>
-                <li> <a href="#" class="black-text">CV</a></li>
+                <li> <a href="pdf/resume.pdf" class="black-text" download>CV</a></li>
                 <li> <a href="#" class="black-text">Contact</a></li>
             </ul>
 
@@ -49,9 +51,21 @@
     </nav>
 
     <!-- container for content stuff-->
-    <div class="container">
+    <div class="container content">
 
-<p>I was bored so I wrote an overly complicated C program</p>
+<div class="section centre-align">
+
+    <!-- have the title on one side
+    and force the other metadata down on small
+    screens-->
+        <h4>Overly Complicated Hello World</h4>
+        24 May 2020
+</div>
+
+<div class="divider"></div>
+
+<p>
+    <p>I was bored so I wrote an overly complicated C program</p>
 <pre class="code c literal-block">
 <span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 #include</span><span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
@@ -103,7 +117,7 @@
 </pre>
 <p>and some other stuff after the code</p>
 
-
+</p>
     </div>
 
     <!-- footer -->
