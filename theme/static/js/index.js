@@ -2,8 +2,11 @@ $(document).ready(function(){
 
     $('.sidenav').sidenav();
     $(".dropdown-trigger").each(function(){
-        console.log("fired")
-        $(this).dropdown({ hover:false })   
+        $(this).dropdown({ 
+            hover:false,
+            belowOrigin: true,
+            inDuration: 300,
+            outDuration: 225, })   
     });
 
 })

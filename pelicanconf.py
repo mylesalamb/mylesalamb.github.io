@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Myles Lamb'
+AUTHOR = 'Myles'
 SITENAME = "Myles' Website"
 SITEURL = ''
 THEME = './theme/'
@@ -13,6 +13,7 @@ PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
+DEFAULT_CATEGORY = 'misc'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
