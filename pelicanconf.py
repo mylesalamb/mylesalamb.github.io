@@ -6,6 +6,7 @@ AUTHOR = 'Myles Lamb'
 SITENAME = "Myles' Website"
 SITEURL = ''
 THEME = './theme/'
+STATIC_PATHS = ['img','pdf']
 
 PATH = 'content'
 

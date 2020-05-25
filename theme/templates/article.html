@@ -2,7 +2,7 @@
 
 {% block head %}
 {{super()}}
-<link rel="stylesheet" href="theme/css/pygments.css"/>
+<link rel="stylesheet" href="theme/css/pygments.css" />
 {% endblock %}
 
 
@@ -12,6 +12,21 @@
 
 {% block body %}
 
-{{article.content}}
+<div class="section centre-align">
 
+    <!-- have the title on one side
+    and force the other metadata down on small
+    screens-->
+        <h4>{{ article.title }}</h4>
+        {{article.date|strftime('%d %B %Y')}}
+        {% if article.github %}
+        {{ article.github }}
+        {% endif %}
+</div>
+
+<div class="divider"></div>
+
+<p>
+    {{article.content}}
+</p>
 {% endblock %}
