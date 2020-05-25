@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="theme/css/main.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+        <script src="theme/js/index.js"></script>
+
+    <title> Categories
+ </title>
+
+    <meta name="title" content="Myles' Wesbite">
+    <meta name="description" content="A personal blog about computing science">
+    <meta name="keywords" content="technology, software, computing, computing science, blog">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-16">
+    <meta name="language" content="English">
+    <meta name="author" content="Myles Lamb">
+
+</head>
+
+<body>
+
+    <!-- Dropdown options -> trigger in nav -->
+    <ul id="dropdown_desk" class="dropdown-content">
+        <li><a href="categories.html" class="black-text">By category</a></li>
+        <li><a href="archives.html" class="black-text">By publish date</a></li>
+    </ul>
+    <ul id="dropdown_mob" class="dropdown-content">
+        <li><a href="categories.html" class="black-text">By category</a></li>
+        <li><a href="archives.html" class="black-text">By publish date</a></li>
+    </ul>
+
+    <nav class="white z-depth-3">
+        <div class="nav-wrapper container">
+            <a href="/" class="brand-logo black-text">Myles' Website</a>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i
+                    class="material-icons black-text">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li> <a class="dropdown-trigger black-text" href="#!" data-target="dropdown_desk"
+                        data-beloworigin="true">Blog<i class="material-icons right black-text">arrow_drop_down</i></a>
+                </li>
+                <li> <a href="#" class="black-text">About</a></li>
+                <li> <a href="pdf/resume.pdf" class="black-text" download>CV</a></li>
+                <li> <a href="#" class="black-text">Contact</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li> <a class="dropdown-trigger black-text" href="#!" data-target="dropdown_mob"
+                        data-beloworigin="true">Blog<i class="material-icons right black-text">arrow_drop_down</i></a>
+                </li>
+                <li> <a href="#" class="black-text">About</a></li>
+                <li> <a href="pdf/resume.pdf" class="black-text" download>CV</a></li>
+                <li> <a href="#" class="black-text">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- container for content stuff-->
+    <main>
+        <div class="container content">
+stuff stuff not working rn
+
+    [(<Category 'Programming'>, [<pelican.contents.Article object at 0x7ff85d56c6a0>]), (<Category 'yeah'>, [<pelican.contents.Article object at 0x7ff85d562370>])]
+
+
+        (<Category 'Programming'>, [<pelican.contents.Article object at 0x7ff85d56c6a0>])
+
+
+        (<Category 'yeah'>, [<pelican.contents.Article object at 0x7ff85d562370>])
+
+
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col l8">
+                    <h5 class white-text>
+                        Other stuff
+                    </h5>
+                    This site uses the <a href="https://pypi.org/project/pelican/">Pelican</a> static site generator,
+                    and the <a href="https://materializecss.com/">Materialize</a> CSS Framework
+                </div>
+
+                <div class="col l4">
+                    <h5 class white-text>
+                        Social Links
+                    </h5>
+
+                    <ul>
+                        <li>
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <a href="https://github.com/mylesalamb" class="white-text"> Github </a>
+                        </li>
+
+                        <li>
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <a href="https://twitter.com/MylesaLamb" class="white-text">Twitter</a>
+                        </li>
+
+                        <li>
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <a href="https://instagram.com/mylesaLamb" class="white-text">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright © 2020, Myles Lamb
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
