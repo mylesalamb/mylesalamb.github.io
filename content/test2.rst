@@ -7,11 +7,10 @@ Overly Complicated Hello World
 :category: Programming
 :slug: overly-complicated-c
 :authors: Myles
-:summary: Boredom -> overly complicated C
+:summary: Boredom = overly complicated C
 
-I was bored so I wrote an overly complicated C program
+I was bored so I wrote an overly complicated C program. This program was originally inspired by a challenge at University of Glasgow's 2019 hacker olympics, where one was to write the classic "Hello World" program, 
+but in the most convoluted manner possible.
 
 .. include:: hello.c
     :code: c
-
-and some other stuff after the code
