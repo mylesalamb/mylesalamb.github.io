@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Myles' Website</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-10-03T10:22:00+02:00</updated><entry><title>My super title</title><link href="/my-super-post.html" rel="alternate"></link><published>2020-10-03T10:22:00+02:00</published><updated>2010-10-04T18:40:00+02:00</updated><author><name>myles</name></author><id>tag:None,2020-10-03:/my-super-post.html</id><summary type="html">&lt;p class="first last"&gt;Short version for index and feeds&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;Somethin sometin something&lt;/p&gt;
-</content><category term="yeah"></category><category term="thats"></category><category term="awesome"></category></entry><entry><title>Overly Complicated Hello World</title><link href="/overly-complicated-c.html" rel="alternate"></link><published>2020-05-24T10:22:00+02:00</published><updated>2010-05-24T18:40:00+02:00</updated><author><name>Myles</name></author><id>tag:None,2020-05-24:/overly-complicated-c.html</id><summary type="html">&lt;p class="first last"&gt;Boredom -&amp;gt; overly complicated C&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;I was bored so I wrote an overly complicated C program&lt;/p&gt;
+</content><category term="yeah"></category><category term="thats"></category><category term="awesome"></category></entry><entry><title>Overly Complicated Hello World</title><link href="/overly-complicated-c.html" rel="alternate"></link><published>2020-05-24T10:22:00+02:00</published><updated>2010-05-24T18:40:00+02:00</updated><author><name>Myles</name></author><id>tag:None,2020-05-24:/overly-complicated-c.html</id><summary type="html">&lt;p class="first last"&gt;Boredom = overly complicated C&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;I was bored so I wrote an overly complicated C program. This program was originally inspired by a challenge at University of Glasgow's 2019 hacker olympics, where one was to write the classic &amp;quot;Hello World&amp;quot; program,
+but in the most convoluted manner possible.&lt;/p&gt;
 &lt;pre class="code c literal-block"&gt;
 &lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;
 #include&lt;/span&gt;&lt;span class="cpf"&gt;&amp;lt;unistd.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;
@@ -52,5 +53,4 @@
     &lt;span class="n"&gt;putc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sc"&gt;'\n'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;stdout&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;
-&lt;p&gt;and some other stuff after the code&lt;/p&gt;
 </content><category term="Programming"></category><category term="C"></category></entry></feed>
