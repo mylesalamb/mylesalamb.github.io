@@ -7,19 +7,19 @@ Categories
 
 {% block body %}
 
-    <h4> Categories </h4>
-    <div class="division"></div>
-
     {% for cat,art in categories %}
-
+        
         <div class="section">
         
-            <h5>{{cat}}</h5>
-        
+            <h5><a href="{{cat.url}}"> {{cat}} </a></h5>
+            <p>
+            Articles: {{art|length}}</br>
+            last updated: {{(art|sort)[0].date|strftime('%d %B %Y')}}
+            </p>
+
+
         </div>
-
-       
-
+        <div class="divider"></div>
     {% endfor %}
 
 {% endblock %}

@@ -1,19 +1,31 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Categories
+{{category}}
 {% endblock %}
 
 
 {% block body %}
-stuff stuff not working rn
 
-    {{categories}}
+<h5> Category: {{category}} </h5>
 
-    {% for elt in categories %}
 
-        {{elt}}
+{% for art in articles %}
+<div class="divider"></div>
+<div class="card grey hoverable">
 
-    {% endfor %}
+    <div class="card-content white-text">
+        <span class="card-title">{{ art.title }}</span>
+        {{ art.date|strftime('%d %B %Y') }}
+        {{ art.summary }}
+    </div>
+
+    <div class="card-action">
+        <a href="/{{art.url}}">Full Article</a>
+    </div>
+</div>
+
+{% endfor %}
+
 
 {% endblock %}
