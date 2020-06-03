@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Myles' Website</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-10-03T10:22:00+02:00</updated><entry><title>My super title</title><link href="/my-super-post.html" rel="alternate"></link><published>2020-10-03T10:22:00+02:00</published><updated>2010-10-04T18:40:00+02:00</updated><author><name>myles</name></author><id>tag:None,2020-10-03:/my-super-post.html</id><summary type="html">&lt;p class="first last"&gt;Short version for index and feeds&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;Somethin sometin something&lt;/p&gt;
-</content><category term="yeah"></category><category term="thats"></category><category term="awesome"></category></entry><entry><title>Overly Complicated Hello World</title><link href="/overly-complicated-c.html" rel="alternate"></link><published>2020-05-24T10:22:00+02:00</published><updated>2010-05-24T18:40:00+02:00</updated><author><name>Myles</name></author><id>tag:None,2020-05-24:/overly-complicated-c.html</id><summary type="html">&lt;p class="first last"&gt;Boredom = overly complicated C&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Myles' Website</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-06-03T17:43:00+02:00</updated><entry><title>Projects for summer</title><link href="/projects-for-summer.html" rel="alternate"></link><published>2020-06-03T17:43:00+02:00</published><updated>2020-06-03T17:43:00+02:00</updated><author><name>myles</name></author><id>tag:None,2020-06-03:/projects-for-summer.html</id><summary type="html">&lt;p class="first last"&gt;Planned projects for summer / Some ideas&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;To keep myself busy over summer, I came up with a few ideas for over summer in relation to programming. They are as follows.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;This website: I have wanted to write my own website for a while but i was not much of a fan of github pages + jekyll offering, hence through using pre-commit hooks and branch trickery
+one can use any other static site generator to acheive this. I opted to use Pelican as I like the Jinja templating engine (the same engine used for Django).&lt;/li&gt;
+&lt;li&gt;Continuation of &amp;quot;IPoSMS&amp;quot;: I also want to explore the idea developed during the &amp;quot;Do you have the guts?&amp;quot; hackathon of 2019, where a mobile browser that operated over SMS was produced.
+The original implementation utilised twilio, that while convenient, was actually quite costly (Our hackathon time expended about £75 in twilio credit over a single weekend).
+Hence I purchased a GPRS shield in order to use a much cheaper pay as you go / contract sim. However this project requires a soldering iron, and due to current affairs I am unlikely
+to be able to borrow one in the near future.&lt;/li&gt;
+&lt;li&gt;Turning a VFD display (Customer display pole) into an alarm clock: I began looking into this project a while ago, however sourcing cheap customer display poles is somewhat
+difficult. This is due to it being preferable to obtain a 'newer' model using USB for data transfer. This project intriques me as it is likely that one would need to write
+a kernel module / driver for the display, and a minor application of reverse engineering assuming a vendor driver could be obtained for windows.&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="Programming"></category></entry><entry><title>Overly Complicated Hello World</title><link href="/overly-complicated-c.html" rel="alternate"></link><published>2020-05-24T10:22:00+02:00</published><updated>2010-05-24T18:40:00+02:00</updated><author><name>Myles</name></author><id>tag:None,2020-05-24:/overly-complicated-c.html</id><summary type="html">&lt;p class="first last"&gt;Boredom -&amp;gt; overly complicated C&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;I was bored so I wrote an overly complicated C program. This program was originally inspired by a challenge at University of Glasgow's 2019 hacker olympics, where one was to write the classic &amp;quot;Hello World&amp;quot; program,
 but in the most convoluted manner possible.&lt;/p&gt;
 &lt;pre class="code c literal-block"&gt;
