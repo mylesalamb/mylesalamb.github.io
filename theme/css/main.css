@@ -9,6 +9,10 @@ body {
   flex-direction: column;
 }
 
+body li {
+  list-style-type: circle !important
+}
+
 main {
   margin-top: 20px;
   margin-bottom: 10px;
