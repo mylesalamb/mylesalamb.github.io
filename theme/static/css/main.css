@@ -1,7 +1,15 @@
 .code {
     background-color: #f6f8fa;
-    margin: 0 0 10px;
+    margin: 20px 0px 10px 0px;
   }
+
+.highlight {
+
+  background-color: #f6f8fa;
+  margin: 20px 0px 10px 0px;
+  
+
+}
 
 body {
   display: flex;
