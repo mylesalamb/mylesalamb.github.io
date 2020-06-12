@@ -7,6 +7,7 @@ Installing docker on Fedora 32
 :summary: How to configure docker on a system running Fedora 32
 
 As of the time of writing the docker repos DO NOT have an entry for Fedora 32
+
 .. raw:: html
 
     <br />
