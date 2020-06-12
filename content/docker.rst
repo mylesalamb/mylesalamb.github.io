@@ -7,12 +7,12 @@ Installing docker on Fedora 32
 :summary: How to configure docker on a system running Fedora 32
 
 As of the time of writing the docker repos DO NOT have an entry for Fedora 32
-:raw-html:`<br />`
+:raw:html:`<br />`
 
 Recently, I have began learning docker. However upon attempting to install it, I ran into a few issues which resulted in me using an ubuntu server virtual machine, which was less than ideal
 for what I was attempting. Below I will document what I did and how I solved the issues that I had ran into.
 
-:raw-html:`<br />`
+:raw:html: <br />
 
 First off before we start installing anything new it's best to run an update first.
 
